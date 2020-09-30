@@ -13,10 +13,12 @@ if [[ $? -eq 0 ]];then
 	chmod u+x $PWD/docker.sh
 	chmod u+x $PWD/pullappz.sh
 	chmod u+x $PWD/setalias.sh
-	bash $PWD/docker.sh &&  bash $PWD/pullappz.sh $$ echo "Now setting alias ..."
+	bash $PWD/docker.sh && echo -e "Now setting alias ..."
 	cmd="alias setal='$PWD/setalias.sh && source $HOME/.bashrc '"
+	cmd2="alias appzpull='$PWD/pullappz.sh && source $HOME/.bashrc '"
 	#echo $cmd
         grep -qF -- "$cmd" $HOME/.bashrc || echo $cmd >> $HOME/.bashrc
+        grep -qF -- "$cmd2" $HOME/.bashrc || echo $cmd2 >> $HOME/.bashrc
         source $HOME/.bashrc 
 	set +a
 fi
