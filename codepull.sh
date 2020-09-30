@@ -22,6 +22,4 @@ if [[ $? -eq 0 ]];then
 fi
 
 
-rm $PWD/docker.sh 
-rm $PWD/pullappz.sh
 echo -e "hope it works "
