@@ -17,6 +17,8 @@
   This script is to pull appz repo to task folder after creating it in the server 
 - **setalias.sh**
   This to setup a alias to get to folder without using cd command 
+- **user.py**
+  This can be used to create/delete user.This script add user to  sudo nopasswd group ,add their public key in centos and ubuntu
 
 #####    All these scripts need improvement feel free to chip In
 
