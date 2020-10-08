@@ -41,7 +41,7 @@ def mailall():
     ser.login("sarath.sankar@dinoct.com", "pzntrviitewwdonw")
     ser.ehlo()
     msg= "hello"
-    ser.sendmail("sarath.sankar@dinoct","sarathsankar.rs@gmail.com,sarathsankr37@gmail.com",msg)
+    ser.sendmail("sarathsankar.rs@gmail.com","sarathsankr37@gmail.com",msg)
     ser.quit()
     return
 
