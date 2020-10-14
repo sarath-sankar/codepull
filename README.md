@@ -12,7 +12,7 @@
 > wget -O - https://raw.githubusercontent.com/sarath-sankar/codepull/master/codepull.sh | bash 
 
 -  **docker.sh**
-  This script is to install docker 18.06.3-ce for debian based server 
+  This script is to install docker latest version  for debian based server 
 -  **pullappz.sh**
   This script is to pull appz repo to task folder after creating it in the server 
 - **setalias.sh**
