@@ -59,10 +59,10 @@ def addnewuser(strin):
     x=x.decode("utf-8")
     #print(x)
     if os.path.isdir("/home/"+uname):
-        os.system("sudo useradd -d /home/"+uname+" -m -p "+ucrypt+" "+uname)
+        os.system("sudo useradd -s /bin/bash -d /home/"+uname+" -m -p "+ucrypt+" "+uname)
         os.system("sudo chown -R "+uname+"."+uname+" /home/"+uname)
     else:
-        os.system("sudo useradd -m -p "+ucrypt+" "+uname)
+        os.system("sudo useradd -s /bin/bash -m -p "+ucrypt+" "+uname)
     if 'Ubuntu' in x:
         os.system("sudo usermod -aG sudo "+uname)
     else:
@@ -209,6 +209,8 @@ def main(args):
         else:
             choice(c,name,l)
     except:
+        print("help sudo python user.py 1 <username> to create user  ")
+        print("help sudo python user.py 2 <username> to delete user  ")
         print("Unexpected error:", sys.exc_info()[0])
         print('Exit.')
 
