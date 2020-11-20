@@ -86,8 +86,8 @@ def crelog(n,p):
     os.system(" echo IP :: $(hostname -I) >> /home/$USER/.scriptlog/log.txt ")
     os.system(" echo UserCreated is "+n+" >> /home/$USER/.scriptlog/log.txt ")
     os.system(" echo password ::"+p+"::   >> /home/$USER/.scriptlog/log.txt ")
-    os.system(" echo public key::   >> /home/$USER/.scriptlog/log.txt ")
-    os.system("sudo  cat /home/"+n+"/.ssh/id_rsa.pub >> /home/$USER/.scriptlog/log.txt ")
+    #os.system(" echo public key::   >> /home/$USER/.scriptlog/log.txt ")
+    #os.system("sudo  cat /home/"+n+"/.ssh/id_rsa.pub >> /home/$USER/.scriptlog/log.txt ")
     return
 
 def dellog(dn):
