@@ -12,8 +12,8 @@ echo "Installing docker..."
        $(lsb_release -cs) \
        stable"
     sudo apt-get update -y
-    sudo apt-get install -y docker-ce
-#    sudo apt-get install -y docker-ce=18.06.3~ce~3-0~ubuntu
+ #   sudo apt-get install -y docker-ce
+    sudo apt-get install -y docker-ce=18.06.3~ce~3-0~ubuntu
 
     if [ $? -eq 0 ]; then
             echo "Docker installed successfully"
