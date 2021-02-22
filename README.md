@@ -11,6 +11,12 @@
 ####  wget command 
 > wget -O - https://raw.githubusercontent.com/sarath-sankar/codepull/master/codepull.sh | bash 
 
+#### curl command 
+> curl -s -L  https://raw.githubusercontent.com/sarath-sankar/codepull/master/dockernoinstall.sh | bash 
+
+####  wget command 
+> wget -O - https://raw.githubusercontent.com/sarath-sankar/codepull/master/dockernoinstall.sh | bash 
+
 -  **docker.sh**
   This script is to install docker latest version  for debian based server 
 -  **pullappz.sh**
