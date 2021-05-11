@@ -1,5 +1,5 @@
 echo "Installing docker..."
-    sudo apt-get update -y \
+    sudo apt-get update  \
     sudo apt-get install -y \
         apt-transport-https \
         ca-certificates \
@@ -11,7 +11,7 @@ echo "Installing docker..."
        "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
        $(lsb_release -cs) \
        stable"
-    sudo apt-get update -y
+    sudo apt-get update 
  #   sudo apt-get install -y docker-ce
     sudo apt-get install -y docker-ce=5:19.03.15~3-0~ubuntu-bionic
 
