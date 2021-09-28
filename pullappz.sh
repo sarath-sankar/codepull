@@ -13,6 +13,7 @@ echo -e "
 echo "HI master"
 read -p " Would you like to create  task folder and pull appz images?  then press c ,else press any thing but c   !!!!" ch
 ch=${ch:-"i"}
+cho=${cho:-"ssh"}
 if [[ $ch == "c" ]];then
         read -p "enter n if your not in the path or just enter  " ans
         ans=${ans:-yes}
@@ -23,9 +24,19 @@ if [[ $ch == "c" ]];then
                 read -p "if u like to pull feature branch just type in... or if you want to pull master continue with enter !!!" branch
                 branch=${branch:-"master"}
                 if [[ $branch == "master" ]]; then
-                        cd $PWD/$task && git clone https://github.com/Cloudbourne/AppZ-Images.git
+                        read -p " ssh or nom enter nom for normal " cho
+                        if [[ $cho == "nom" ]];then
+                                cd $PWD/$task && git clone https://github.com/Cloudbourne/AppZ-Images.git
+                        else
+                                cd $PWD/$task && git clone git@github.com:Cloudbourne/AppZ-Images.git
+                        fi
                 else
-                        cd $PWD/$task && git clone https://github.com/Cloudbourne/AppZ-Images.git -b $branch
+                        read -p " ssh or nom enter nom for normal " cho
+                        if [[ $cho == "nom" ]];then
+                                cd $PWD/$task && git clone https://github.com/Cloudbourne/AppZ-Images.git  -b $branch
+                        else
+                                cd $PWD/$task && git clone git@github.com:Cloudbourne/AppZ-Images.git  -b $branch
+                        fi
                 fi
         fi
 fi
