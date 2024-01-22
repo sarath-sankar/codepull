@@ -25,7 +25,8 @@
   This to setup a alias to get to folder without using cd command 
 - **user.py**
   This can be used to create/delete user.This script add user to  sudo nopasswd group ,add their public key in centos and ubuntu
-
+- **Preinstallkubeadm_centos.sh**
+  This is used for installing kubeadm and all prerequisites in centos or redhat version 1.27.00
 #####    All these scripts need improvement feel free to chip In
 
 
